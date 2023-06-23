@@ -68,7 +68,8 @@ elif [ "$NAME" == "Ubuntu" ]; then
     elif [ "$VERSION_CODENAME" == "bionic" ] || \
          [ "$VERSION_CODENAME" == "focal" ] || \
          [ "$VERSION_CODENAME" == "groovy" ] || \
-         [ "$VERSION_CODENAME" == "hirsute" ]; then
+         [ "$VERSION_CODENAME" == "hirsute" ] || \ 
+         [ "$VERSION_CODENAME" == "jammy" ]; then
         __install_deb_url $DEB_PKG
     else
         echo "Only packages for Ubuntu 16.04/18.04/20.04/20.10/21.04 are available for installation"
