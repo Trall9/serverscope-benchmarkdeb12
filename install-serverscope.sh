@@ -77,6 +77,8 @@ elif [ "$NAME" == "Ubuntu" ]; then
     fi
 elif [ "$NAME" == "Debian GNU/Linux" ]; then
     if [ "$VERSION_ID" == "9" ] || \
+        [ "$VERSION_ID" == "11" ] || \
+        [ "$VERSION_ID" == "12" ] || \
        [ "$VERSION_ID" == "10" ]; then
         __install_deb_url $DEB_PKG
     else
